@@ -8,7 +8,7 @@ handlers:
     formatter: simpleFormatter
   file:
     class: logging.FileHandler
-    filename: /tmp/docstring2md.log
+    filename: docstring2md.log
     mode: w
     level: DEBUG
     formatter: simpleFormatter

@@ -49,4 +49,4 @@ CFG["cmdclass"] = {
     'develop': PostDevelopCommand,
     'install': PostInstallCommand,
 }
-setup(**CFG)
+setup()
