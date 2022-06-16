@@ -15,7 +15,7 @@ class PytLog(object):
     def __init__(self):
         path = pathlib.Path(__file__).resolve().parent
         yaml_conf = str(path) + YAML_CONF
-        logging.config.dictConfig(yaml.load(open(yaml_conf, 'r')))
+        logging.config.dictConfig(yaml.safe_load(open(yaml_conf, 'r')))
         self.__logger = logging.getLogger()
 
     def debug(self, msg):
